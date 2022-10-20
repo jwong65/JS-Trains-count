@@ -38,7 +38,7 @@ console.log("Total years: ", totalYears)
 for (let t=0; t<newInventoryCarModels.length; t++){
     //console.log(newInventoryCarModels[t])
     if(newInventoryCarTypes[t]=='StockCar'){
-        StockYears= StockYears+Number(newInventoryYearBuilt[t]);
+        StockYears=StockYears+Number(newInventoryYearBuilt[t]);
         stockNumber+=1;
         console.log(newInventoryYearBuilt[t])
     }
@@ -46,4 +46,16 @@ for (let t=0; t<newInventoryCarModels.length; t++){
 //It's iterating now
 StockYears=StockYears/stockNumber
 console.log("The average year of a Stock model is:", StockYears)
-
+let v=0;
+let RefrigeratorCount=0;
+let RefrigeratorYears=0;
+while(v<newInventoryCarTypes.length){
+    if(newInventoryCarTypes[v]=='Refrigerator'){
+        RefrigeratorCount+=1
+        RefrigeratorYears=RefrigeratorYears+Number(newInventoryYearBuilt[v])
+    }
+v++
+}
+RefrigeratorYears=RefrigeratorYears/RefrigeratorCount;
+console.log("The average year of a Refrigerator model is:", RefrigeratorYears )
+//There's only 1 Refrigerator but I wanted to test the while loop.
