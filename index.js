@@ -59,3 +59,16 @@ v++
 RefrigeratorYears=RefrigeratorYears/RefrigeratorCount;
 console.log("The average year of a Refrigerator model is:", RefrigeratorYears )
 //There's only 1 Refrigerator but I wanted to test the while loop.
+
+//LorrieCount is already accounted for in one of the functions
+
+let LorrieYears=0;
+for(let p=0; p<newInventoryCarModels.length; p++){
+    if (newInventoryCarTypes[p]=='Lorrie'){
+        LorrieYears=LorrieYears+Number(newInventoryYearBuilt[p])
+        //console.log(newInventoryYearBuilt)
+    }
+}
+
+LorrieYears=LorrieYears/LorrieCount;
+console.log("The average year of a Lorrie model is:", LorrieYears)
