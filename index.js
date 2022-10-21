@@ -40,7 +40,7 @@ for (let t=0; t<newInventoryCarModels.length; t++){
     if(newInventoryCarTypes[t]=='StockCar'){
         StockYears=StockYears+Number(newInventoryYearBuilt[t]);
         stockNumber+=1;
-        console.log(newInventoryYearBuilt[t])
+        //console.log(newInventoryYearBuilt[t])
     }
 }
 //It's iterating now
